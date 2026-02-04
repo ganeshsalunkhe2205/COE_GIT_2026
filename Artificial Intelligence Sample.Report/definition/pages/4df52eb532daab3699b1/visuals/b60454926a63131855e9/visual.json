@@ -1,0 +1,99 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "b60454926a63131855e9",
+  "position": {
+    "x": 225.07273877292855,
+    "y": 79.342188488298547,
+    "z": 0,
+    "height": 361.08791903858321,
+    "width": 822.5679949399115,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Contacts"
+                    }
+                  },
+                  "Property": "Contact"
+                }
+              },
+              "queryRef": "Contacts.Contact",
+              "nativeQueryRef": "Contact"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Contacts"
+                    }
+                  },
+                  "Property": "City"
+                }
+              },
+              "queryRef": "Contacts.City",
+              "nativeQueryRef": "City"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Contacts"
+                        }
+                      },
+                      "Property": "ContactSeq"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Contacts.ContactSeq)",
+              "nativeQueryRef": "ContactSeq"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Contacts"
+                    }
+                  },
+                  "Property": "Country"
+                }
+              },
+              "queryRef": "Contacts.Country",
+              "nativeQueryRef": "Country"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Contacts"
+                    }
+                  },
+                  "Property": "FirstName"
+                }
+              },
+              "queryRef": "Contacts.FirstName",
+              "nativeQueryRef": "FirstName"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
